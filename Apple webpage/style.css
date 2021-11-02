@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(204, 192, 192);
+    overflow: scroll;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+header {
+    background-color: #333333; 
+    
+    display: grid;
+    justify-content: center;
+
+}
+header .header-menu {
+    list-style: none;
+    display: grid;  
+    grid-auto-flow: column;
+    gap: 1.3rem;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+
+}
+
+
+.header-menu img{
+     width:30px;
+     padding: 5px;
+     
+}
+
+.header-menu a {
+    color: #fbfbfd;
+    text-decoration: none;
+
+}
+
+.header-menu a:hover {
+    color: gray;
+}
+.header-notification {
+    background-color: gray;
+    padding: 0.8rem;
+    font-weight: 300;   
+}
+
+.header-notification p {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+.container {
+    grid-gap: 10px;
+    display: grid;
+    grid-template: 'iphone-13-pro  iphone-13-pro'      1fr
+                   'iphone-13      iphone-13'          1fr
+                   'macbook-pro    macbook-pro'        1fr
+                   'airpod         watch'              1fr
+                   'home-pod       ipad-mini'          1fr
+                   'card           tv'                 1fr /
+                    1fr            1fr;
+
+} 
+
+span {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700; 
+    padding-top: 50px;  
+}
+
+a {
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: royalblue;   
+}
+
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    font-weight: 700;  
+    font-size: 30px;
+}
+
+
+.iphone-13-pro {
+
+    grid-area: iphone-13-pro;
+    background-color: #fbfbfd;
+    display: grid;
+    justify-content: center;
+       
+}
+.iphone-13-pro img {
+   
+    width: 600px;
+   
+}
+
+.iphone-13-pro-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+main .iphone-13-pro-buy a:hover {
+    text-decoration: underline;
+}
+
+.iphone-13-pro-wrapper-link {
+    text-decoration: unset;
+    color: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.iphone-13 {
+
+    grid-area: iphone-13;
+    background-color: #34283c;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.iphone-13 img {
+    width: 800px;
+   
+}
+
+
+.iphone-13 h2 {
+    color: white;
+}
+
+
+.iphone-13 span {
+    color: white;
+    font-weight: 500;
+}
+
+.iphone-13-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+main .iphone-13-buy a:hover {
+    text-decoration: underline;
+}
+
+
+.macbook-pro {
+
+    grid-area: macbook-pro;
+    background-color: #fbfbfd;
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.macbook-pro img {
+    width: 700px;
+    
+}
+
+.macbook-pro-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+main .macbook-pro-buy a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.airpod {
+
+    grid-area: airpod;
+    background-color: #ffffff;
+    display: grid;
+    justify-content: center;
+}
+
+.airpod-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+
+.airpod img {
+    width: fit-content;
+}
+
+.home-pod {
+
+    grid-area: home-pod;
+    background-color:#fbfbfd;
+    display: grid;
+    justify-content: center;
+}
+
+.home-pod img {
+    width: 400px;
+}
+
+.home-pod-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+.card {
+
+    grid-area: card;
+    background-color: rgba(110, 110, 110, 1);
+    display: grid;
+    justify-content: center;
+}
+
+.card-photo {
+    width: 600px;
+    
+
+}
+
+.card-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}    
+
+
+.watch {
+
+    grid-area: watch;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+
+}
+
+.watch-photo {
+    width: 200px;
+}
+
+.watch-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+.ipad-mini{
+   
+    grid-area: ipad-mini;
+    background-color: #fbfbfd;
+    display: grid;
+}
+
+.ipad-mini-buy {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.tv {
+    
+    grid-area: tv;
+    background-color: orange;
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+footer {
+    background-color: #f5f5f7;
+    display: grid;
+    margin: 10px;
+}
+
+
+.footer-info {
+    display: grid;
+    gap: 1.5rem;
+    margin: 50px;
+    border-bottom: solid 1px gray;
+    padding-bottom: 20px;
+
+}
+
+.footer-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap:1.5rem;
+    margin: 50px;
+
+    padding-bottom: 20px;
+
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.find-a-store {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+
+}
+
+.copyright {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    
+    
+}
+
+.copyright li {
+    list-style: none;
+    border-left: 1px solid gray;
+    padding: 10px;
+    margin: 50px;
+   
+}
